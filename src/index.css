@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  background-color: rgb(41, 101, 214);
+  padding: 1.5rem;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: start;
+  padding: 1rem 0;
+  color: #fff;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: start;
+  color: rgb(229, 240, 69);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  gap: 2rem;
+}
+
+.show-scores {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+}
+
+.show-scores__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.show-scores__table {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  border: 3px solid rgb(207, 198, 204);
+  border-radius: 0.5rem;
+  background-color: rgb(4, 15, 17);
+  padding: 1rem;
+  gap: 0.25rem;
+}
+
+.show-scores__table-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0 1rem;
+  border-radius: 5px;
+  border: 2px solid rgb(207, 198, 204);
+}
+
+.show-scores__table-row:nth-child(even) {
+  background-color: #d7d3d3;
+}
+
+.show-scores__table-row:nth-child(odd) {
+  background-color: rgb(41, 101, 214);
+  color: #fff;
+}
+
+.add-score {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  gap: 1rem;
+  border: 3px solid rgb(207, 198, 204);
+  border-radius: 0.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  gap: 1rem;
+}
+
+.player,
+.score {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 5px;
+  height: 2rem;
+  padding: 0.5rem;
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 5px;
+  background-color: rgb(85, 192, 18);
+  color: rgb(246, 212, 212);
+  border: 3px solid rgb(207, 198, 204);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.submit-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    padding: 3rem 5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  section {
+    flex-direction: row;
+    margin-top: 3rem;
+    gap: 5rem;
+  }
+
+  .add-score {
+    height: 15rem;
+    padding: 2rem;
+  }
+}
