@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  background-color: rgb(255, 255, 255);
+
+  header {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 100px;
+    margin: 5% 10%;
+
+    .logo {
+      background-image: url(../asset/logo.png);
+      background-repeat: no-repeat, repeat;
+      background-position: center;
+      background-size: 100%;
+      width: 15%;
+      height: 100%;
+      border-radius: 100%;
+      border: 3px solid  rgba(0, 0, 0, 0.5);
+      position: relative;
+      left: 10%;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      width: 85%;
+
+      a {
+        margin-right: 12%;
+        text-decoration: none;
+        color: #000;
+        transition-property: all;
+        transition-duration: 1s;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 1.3rem;
+      }
+
+      a:visited {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    width: 90%;
+    margin: 5% 10%;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+
+    .show {
+      display: flex;
+      flex-direction: column;
+
+      .line {
+        display: flex;
+        flex-direction: row;
+        background-repeat: no-repeat, repeat;
+        background-position: center;
+        background-size: 100%;
+        width: 100%;
+        height: auto;
+      }
+
+      .title {
+        display: flex;
+        align-items: center;
+        height: 50px;
+      }
+
+      .like_cont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 150px;
+
+        .material-symbols-outlined {
+          font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48;
+        }
+
+        .material-symbols-outlined:hover {
+          cursor: grab;
+          color: red;
+          -webkit-text-stroke-width: 9px;
+        }
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+
+    .sign {
+      display: flex;
+      align-items: center;
+      padding-left: 5%;
+      font-size: 20px;
+      height: 100px;
+    }
+  }
+}

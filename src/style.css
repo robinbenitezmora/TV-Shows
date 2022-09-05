@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  background-color: rgb(255, 255, 255);
+}
+
+.container header {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  height: 100px;
+  margin: 5% 10%;
+}
+
+.container header .logo {
+  background-image: url(../asset/logo.png);
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 15%;
+  height: 100%;
+  border-radius: 100%;
+  border: 3px solid rgba(0, 0, 0, 0.5);
+  position: relative;
+  left: 5%;
+}
+
+.container header nav {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+}
+
+.container header nav a {
+  margin-right: 10%;
+  text-decoration: none;
+  color: #000;
+  transition-property: all;
+  transition-duration: 1s;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.container header nav a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.container header nav a:visited {
+  text-decoration: underline;
+}
+
+.container section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 1fr;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.container section .show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #000;
+  padding: 1rem;
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  gap: 0.5rem;
+  background-color: rgb(190, 58, 67);
+}
+
+.container section .show .line {
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 100%;
+  height: 75vh;
+  border-radius: 1rem;
+}
+
+.container section .show .title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+}
+
+.container section .show .like_cont,
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  gap: 1rem;
+  color: #fff;
+}
+
+.container section .show .like_cont .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.container section .show .like_cont .material-symbols-outlined:hover {
+  cursor: grab;
+  color: red;
+  -webkit-text-stroke-width: 9px;
+}
+
+.container footer {
+  display: flex;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.container footer .sign {
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  font-size: 20px;
+  height: 100px;
+}
+
+.comments,
+.reserves {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: 1px solid #000;
+  background-color: rgb(82, 48, 194);
+  padding: 1rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}

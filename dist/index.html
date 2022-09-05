@@ -4,37 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./index.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet"> 
-  <title>Leaderboard</title>
+  <title>Movies</title>
 <script defer src="main.js"></script></head>
 <body>
   <header>
-    <h1>Leaderboard</h1>
+    <h1>Your Best Movie Stand</h1>
+    <h3>Movies: </h3>
   </header>
-  <main>
-    <section>
-      <div class="show-scores">
-        <div class="show-scores__header">
-          <h3>Recent Scores</h3>
-          <button type="button" class="show-scores__button">Refresh</button>
-        </div>
-        <div class="show-scores__table"></div>
-      </div>
-      <div class="add-score">
-        <h3>Add your Score</h3>
-        <form id="data-submit">
-          <label for="name">
-            <input class="player" type="text" name="name" id="name" placeholder="Your name">
-          </label>
-          <label for="score">
-            <input class="score" type="text" name="score" id="score" placeholder="Your score">
-          </label>
-          <div class="submit-btn">
-            <button type="submit" value="submit">Submit</button>
-          </div>
-        </form>
-      </div>
-    </section>
-  </main>
+  <div class="cards"></div>
+  
 </body>
 </html>
+
+<!-- <section class="popup">
+  <div class="popup__content">
+    <div class="popup__content-general">
+      <div class="popup__title">
+        <h1>Movie 1</h1>
+      </div>
+      <div class="popup__text">
+        <div class="first-line">
+          <div>Fuel: Titanium</div>
+          <div>Weight: 400</div>
+        </div>
+        <div class="second-line">
+          <div>Length: 100.000</div>
+          <div>Power: 10.000.000</div>
+        </div>
+      </div>
+    </div>
+    <div class="popup__comments">
+      <h3>Comments</h3>
+      <div class="popup__comments-list">
+        <span>12.12.2019</span>
+        <span>John Doe</span>
+        <p>I'd love you buy it</p>
+      </div>
+    </div>
+  </div>
+  <div class="form-title">
+    <h3>Add comments</h3>
+  </div>
+  <form action="/">
+    <input class="name" type="text" id="name" name="name" placeholder="Your name">
+    <textarea name="comment" id="textarea" cols="30" rows="10" placeholder="Your insgight"></textarea>
+    <button type="submit">Comment</button>
+  </form>
+</section> -->
+
+
