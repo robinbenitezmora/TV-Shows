@@ -18,6 +18,8 @@ This project is a movie database that allows users to search for movies, add the
 - Human Resource: This project was built by a team of 2 people.
 - The header in the home page has a link in order to open the movies page called "Shows". By means of this link, the user can access the movies page, add comments and give 'likes'.
 
+## 💻 Live demo
+- [Live Demo Link](https://gregarious-melba-45d9be.netlify.app/)
 ## Getting Started
 
 If you want to clone this project:
